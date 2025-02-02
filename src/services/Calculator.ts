@@ -50,7 +50,6 @@ export class Calculator {
     } {
       const delimiterMatch = numbers.match(/^\/\/([^0-9\n])\n/);
       let delimiters = [",", "\n"];
-  
       if (numbers.startsWith("//")) {
         if (!delimiterMatch) {
           throw new Error("Invalid format");
