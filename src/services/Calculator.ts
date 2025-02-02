@@ -49,7 +49,7 @@ export class Calculator {
       cleanNumbers: string;
     } {
       const delimiterMatch = numbers.match(/^\/\/([^0-9\n])\n/);
-      let delimiters = [",", "\n"];
+      const delimiters = [",", "\n"];
       if (numbers.startsWith("//")) {
         if (!delimiterMatch) {
           throw new Error("Invalid format");
